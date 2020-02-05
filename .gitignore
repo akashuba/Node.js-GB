@@ -1,0 +1,6 @@
+.idea
+.awcache
+.DS_Store
+.vscode
+
+node_modules
