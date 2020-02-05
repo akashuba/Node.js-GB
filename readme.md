@@ -1,4 +1,9 @@
-npm i ansi --save (-S)
-npm i ansi --save-prod (-P)
-npm i ansi --save-dev (-D)
-npm i ansi --save-optional (-O)
+## Education Node.js course:
+
+1. Console programmes
+2. Working with network requests
+3. Express
+4. MySQL & mongoDB
+5. Authorization
+6. REST API
+7. WebSockets
