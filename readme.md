@@ -1,6 +1,6 @@
 ## Education Node.js course:
 
-- [ ] Console programmes
+- [ ] Console programs
 - [ ] Working with network requests
 - [ ] Express
 - [ ] MySQL & mongoDB
