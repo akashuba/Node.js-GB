@@ -2,7 +2,7 @@
 
 * ✅ Console programs
 * ✅ Working with network requests
-* Express
+* ✅ Express
 * MySQL & mongoDB
 * Authorization
 * REST API
