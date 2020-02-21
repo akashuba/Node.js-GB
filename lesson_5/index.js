@@ -39,7 +39,7 @@ app.delete('/tasks', async (req, res) => {
 			return console.log(error);	
 		} 
 	})
-	// Ререндер не работает, спросить почему ?
+	// Ререндер не работает, спросить почему.
 	// const tasks = await taskMongoose.find();
 	// res.render('main', {tasks})
 
