@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tasks</title>
+	<link href="/static/styles/styles.css" rel="stylesheet">
+</head>
+<body>
+	<div style="font-family: Arial, Helvetica, sans-serif; width: 500px;">
+		<h1>Tasks</h1>
+		<form id="form">
+			<fieldset>
+				<legend>Add task</legend>
+				<div>
+					<div>
+						<label for="title">task name</label> 
+					</div>
+					<input type="text" name="title" id="title" required>
+				</div>
+				<p>
+					<input type="checkbox" name="isFinished" id="checkbox">
+					<label for="checkbox">is task finished</label>
+				</p>
+				<button class="button" type="submit">submit</button>
+			</fieldset>
+		</form>
+
+		{{#if tasks}}
+			<ul>
+			{{#each tasks}}
+			<li id="task">
+				<p class="task_item">
+					{{#if isFinished}}
+						<input class="task_checkbox" onclick="onCheckboxClick(this)" type="checkbox" checked>
+					{{else}}
+						<input class="task_checkbox" onclick="onCheckboxClick(this)" type="checkbox" >
+					{{/if}}
+					<span id="title">{{title}}</span>
+					<input type="hidden" value={{_id}}>
+					<button class="button button_remove" onclick="onRemoveClick(this)">remove</button>
+				</p>
+			</li>
+			{{/each}}
+		</ul>
+		{{/if}}
+	</div>
+
+	<script src="/static/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.task_item {
+	display: flex;
+}
+
+.button {
+	font-size: 14px;
+    border-radius: 10px;
+	outline: none;
+}
+
+.button_remove {
+	margin-left: auto;
+	background-color: #FF5722;
+	color: white;
+	border: none;
+}
+
+.button_remove:focus {
+	background-color: #e6420e;
+}
+
+.task_checkbox {
+	margin-right: 10px;
+}
