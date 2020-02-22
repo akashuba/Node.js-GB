@@ -6,21 +6,30 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pm": "pm2 --help",
+<<<<<<< Updated upstream
     "start": "nodemon lesson_4/index.js "
+=======
+    "start": "nodemon lesson_6/index.js "
+>>>>>>> Stashed changes
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ansi": "^0.3.1",
+    "bcryptjs": "^2.4.3",
     "cheerio": "^1.0.0-rc.3",
     "colors": "^1.4.0",
+    "connect-mongo": "^3.2.0",
     "consolidate": "^0.15.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "handlebars": "^4.7.3",
     "hbs": "^4.1.0",
     "nodemon": "^2.0.2",
     "ora": "^4.0.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "pm2": "^4.2.3",
     "request": "^2.88.2",
     "url": "^0.11.0"
