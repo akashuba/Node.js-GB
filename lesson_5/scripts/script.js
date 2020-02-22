@@ -4,11 +4,11 @@ const form = document.querySelector('#form');
 
 function onCheckboxClick(target) {
 	const data = {
-		title: target.nextElementSibling.innerText,
+		_id: target.nextElementSibling.nextElementSibling.value,
 		isFinished: target.checked,
 	}
 
-	fetch('http://localhost:3000/tasks', {
+	fetch('http://localhost:3000/task', {
 		method: 'PUT',
 		headers: {
 			'Content-Type': 'application/json;charset=utf-8'
@@ -21,10 +21,10 @@ function onCheckboxClick(target) {
 
 function onRemoveClick(target) {
 	const data = {
-		title: target.previousElementSibling.innerText,
+		_id: target.previousElementSibling.value,
 	}
 
-	fetch('http://localhost:3000/tasks', {
+	fetch('http://localhost:3000/task', {
 		method: 'DELETE',
 		headers: {
 			'Content-Type': 'application/json;charset=utf-8'
@@ -45,7 +45,7 @@ form.addEventListener('submit', (event) => {
 		isFinished: form.querySelector('#checkbox').checked,
 	}
 
-	fetch('http://localhost:3000/tasks', {
+	fetch('http://localhost:3000/task', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json;charset=utf-8'

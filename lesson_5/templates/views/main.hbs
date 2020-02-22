@@ -37,6 +37,7 @@
 						<input class="task_checkbox" onclick="onCheckboxClick(this)" type="checkbox" >
 					{{/if}}
 					<span id="title">{{title}}</span>
+					<input type="hidden" value={{_id}}>
 					<button class="button button_remove" onclick="onRemoveClick(this)">remove</button>
 				</p>
 			</li>

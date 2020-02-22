@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const taskMongoose = require('./mongoBase');
+const taskMongoose = require('./model/mongoBase');
 const path = require('path');
 const hbs = require("hbs");
 
@@ -26,15 +26,15 @@ app.get('/tasks', async (req, res) => {
 	res.render('main', {tasks})
 })
 
-app.post('/tasks', async (req, res) => {
+app.post('/task', async (req, res) => {
 	const task = new taskMongoose(req.body);
 	const taskAfterSave = await task.save();
 
 	res.json(taskAfterSave);
 })
 
-app.delete('/tasks', async (req, res) => {
-	removedTask = await taskMongoose.deleteOne({title: req.body.title}, async (error, result) => {
+app.delete('/task', async (req, res) => {
+	removedTask = await taskMongoose.deleteOne({_id: req.body._id}, async (error, result) => {
 		if(error) {
 			return console.log(error);	
 		} 
@@ -46,8 +46,8 @@ app.delete('/tasks', async (req, res) => {
 	res.json(removedTask);
 })
 
-app.put('/tasks', async (req, res) => {
-	updateTask = await taskMongoose.updateOne({title: req.body.title}, {isFinished: req.body.isFinished}, (error, result) => {
+app.put('/task', async (req, res) => {
+	updateTask = await taskMongoose.updateOne({_id: req.body._id}, {isFinished: req.body.isFinished}, (error, result) => {
 		if(error) return console.log(error);
 	})
 
