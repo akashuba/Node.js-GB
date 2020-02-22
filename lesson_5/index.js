@@ -20,6 +20,10 @@ hbs.registerPartials(path.resolve(__dirname, 'templates/partials'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
+app.get('/', (req, res) => {
+	res.redirect('/tasks')
+})
+
 app.get('/tasks', async (req, res) => {
 	const tasks = await taskMongoose.find();
 	
