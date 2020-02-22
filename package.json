@@ -6,11 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pm": "pm2 --help",
-<<<<<<< Updated upstream
-    "start": "nodemon lesson_4/index.js "
-=======
     "start": "nodemon lesson_6/index.js "
->>>>>>> Stashed changes
   },
   "keywords": [],
   "author": "",
@@ -26,6 +22,7 @@
     "express-session": "^1.17.0",
     "handlebars": "^4.7.3",
     "hbs": "^4.1.0",
+    "mongoose": "^5.9.1",
     "nodemon": "^2.0.2",
     "ora": "^4.0.3",
     "passport": "^0.4.1",
