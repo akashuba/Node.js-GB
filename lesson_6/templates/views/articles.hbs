@@ -1,0 +1,16 @@
+<div style="font-family: Arial, Helvetica, sans-serif;">
+    {{> form}}
+    <h2>Articles:</h2>
+     {{#if data}}
+        <ul>
+        {{#each data}}
+        <li>
+            <a href={{link}} target="_blank">
+                <p><strong>{{title}}</strong></p>
+                <p>{{subtitle}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+     {{/if}}
+</div>
