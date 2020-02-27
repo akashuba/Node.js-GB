@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pm": "pm2 --help",
-    "start": "nodemon lesson_6/index.js "
+    "start": "nodemon lesson_7/index.js "
   },
   "keywords": [],
   "author": "",
@@ -18,10 +18,12 @@
     "colors": "^1.4.0",
     "connect-mongo": "^3.2.0",
     "consolidate": "^0.15.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "handlebars": "^4.7.3",
     "hbs": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.1",
     "nodemon": "^2.0.2",
     "ora": "^4.0.3",
