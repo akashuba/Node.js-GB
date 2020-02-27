@@ -4,6 +4,6 @@
 * ✅ Working with network requests
 * ✅ Express
 * ✅ MySQL & mongoDB
-* Authorization
+* ✅ Authorization
 * REST API
 * WebSockets
