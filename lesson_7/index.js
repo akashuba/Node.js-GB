@@ -73,7 +73,7 @@ app.post('/tasks', async (req, res) => {
 })
 
 app.delete('/tasks', async (req, res) => {
-	removedTask = await taskMongoose.deleteOne({ _id: req.body._id }, async (error, result) => {
+	const removedTask = await taskMongoose.deleteOne({ _id: req.body._id }, async (error, result) => {
 		if (error) {
 			return console.log(error);
 		}
@@ -83,7 +83,7 @@ app.delete('/tasks', async (req, res) => {
 })
 
 app.put('/tasks', async (req, res) => {
-	updateTask = await taskMongoose.updateOne({ _id: req.body._id }, { isFinished: req.body.isFinished }, (error, result) => {
+	const updateTask = await taskMongoose.updateOne({ _id: req.body._id }, { isFinished: req.body.isFinished }, (error, result) => {
 		if (error) return console.log(error);
 	})
 
