@@ -5,9 +5,9 @@
 ```
 {
 	email: string,
-    fullName: string,
-    password: string,
-    repassword: string,
+	fullName: string,
+	password: string,
+	repassword: string,
 }
 ```
 ### Authorization
