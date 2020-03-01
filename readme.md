@@ -5,5 +5,5 @@
 * ✅ Express
 * ✅ MySQL & mongoDB
 * ✅ Authorization
-* REST API
+* ✅ REST API
 * WebSockets
