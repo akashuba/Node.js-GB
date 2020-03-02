@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pm": "pm2 --help",
-    "start": "nodemon lesson_7/index.js "
+    "start": "nodemon lesson_8/index.js "
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,8 @@
     "colors": "^1.4.0",
     "connect-mongo": "^3.2.0",
     "consolidate": "^0.15.1",
+    "cookie-parse": "^0.4.0",
+    "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
@@ -31,6 +33,7 @@
     "passport-local": "^1.0.0",
     "pm2": "^4.2.3",
     "request": "^2.88.2",
+    "socket.io": "^2.3.0",
     "url": "^0.11.0"
   },
   "devDependencies": {},
