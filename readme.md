@@ -6,4 +6,4 @@
 * ✅ MySQL & mongoDB
 * ✅ Authorization
 * ✅ REST API
-* WebSockets
+* ✅WebSockets
